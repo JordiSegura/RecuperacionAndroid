@@ -25,7 +25,6 @@ public class AboutActivity extends AppCompatActivity {
 
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
         String username = sharedPref.getString("username", "Username");
-        Log.d("ncs", username);
         tvUsername.setText(String.format(this.getString(R.string.aboutText), username));
     }
 }
